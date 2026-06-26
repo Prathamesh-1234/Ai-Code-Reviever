@@ -16,7 +16,6 @@ import rehypeHighlight from 'rehype-highlight';
 import 'highlight.js/styles/github-dark.css';
 import { useAuth } from '../../hooks/useAuth';
 import api from '../../utils/api';
-import { useCallback } from 'react';
 import { 
   Code2, 
   Shield, 

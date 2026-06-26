@@ -2,48 +2,193 @@
 # Dependencies
 node_modules/
 
-# Environment variables
+# Environment
 .env
 .env.local
 .env.*
 
-# Build outputs
+# Logs
+*.log
+
+# Build artifacts
 dist/
 build/
 target/
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Cache
+.cache/
+*.cache
 
-# Logs
-*.log
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# IDE specific
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
-# OS specific
-.DS_Store
-Thumbs.db
-
-# Testing
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/
 .mypy_cache/
 .pytest_cache/
-.nyc_output/
-coverage/
+.hypothesis/
 
-# Runtime data
-.pid
-.pycache/
+# Node
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+dist/
+public/dist/
+coverage/
+.nyc_output/
+.grunt
+bower_components/
+.jspm/
+.tmp/
+.secret
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.next/
+.nuxt/
+.vuepress/dist
+.static
+.svelte-kit/
+.output/
+.vercel/
+.netlify/
+.sanity/
+.remix/
+.commitlintrc.json
+.czrc
+.eslintcache
+.fusebox/
+.nyc_output/
+.rpt2_cache/
+.trash
+.webpack
+.webpack.cache
+.webpackrc.js
+.webpackrc.ts
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.js
+.webpackrc.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpackrc.json5
+.webpackrc.toml
+.webpackrc.babel.js
+.webpackrc.babel.ts
+.webpackrc.coffee
+.webpackrc.yaml
+.webpackrc.yml
+.webpackrc.json
+.webpack......
 ```
