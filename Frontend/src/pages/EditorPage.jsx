@@ -133,9 +133,18 @@ export default function EditorPage() {
         setRemainingReviews(remainingReviews - 1);
       }
     } catch (err) {
-      const errorMessage = err.response?.data?.error || err.message || 'Failed to get review. Please try again.';
+      let errorMessage = 'Failed to get review. Please try again.';
+      
+      if (err.response?.data?.error) {
+        // Handle case where backend sends an object as error
+        errorMessage = typeof err.response.data.error === 'string' 
+          ? err.response.data.error 
+          : JSON.stringify(err.response.data.error);
+      } else if (err.message) {
+        errorMessage = err.message;
+      }
+      
       setError(errorMessage);
-      console.error('Review error:', err);
     } finally {
       setLoading(false);
     }
