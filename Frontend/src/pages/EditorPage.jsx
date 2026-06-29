@@ -133,7 +133,9 @@ export default function EditorPage() {
         setRemainingReviews(remainingReviews - 1);
       }
     } catch (err) {
-      setError(err.response?.data?.error || 'Failed to get review. Please try again.');
+      const errorMessage = err.response?.data?.error || err.message || 'Failed to get review. Please try again.';
+      setError(errorMessage);
+      console.error('Review error:', err);
     } finally {
       setLoading(false);
     }
@@ -297,7 +299,7 @@ export default function EditorPage() {
                 }}
               />
             </div>
-            {error && (
+            {error && typeof error === 'string' &&(
               <div className="px-4 pb-4">
                 <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 text-sm flex items-center gap-2">
                   <AlertCircle className="w-4 h-4" />
