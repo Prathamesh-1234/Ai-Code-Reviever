@@ -312,7 +312,7 @@ export default function EditorPage() {
               <div className="px-4 pb-4">
                 <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 text-sm flex items-center gap-2">
                   <AlertCircle className="w-4 h-4" />
-                  {error}
+                  /* {error} */
                 </div>
               </div>
             )}
